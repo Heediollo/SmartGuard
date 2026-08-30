@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartguard">
+
+    <!-- ===== АППАРАТНЫЕ ВОЗМОЖНОСТИ ===== -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- ===== РАЗРЕШЕНИЯ ===== -->
+
+    <!-- Телефон и звонки -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+
+    <!-- Проверка контактов (известен ли номер) -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Аудио и запись -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Foreground Service (только microphone) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <!-- Система и уведомления -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- SMS (для анализа сообщений) -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" android:maxSdkVersion="18" />
+
+    <!-- Сеть и файлы -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+    <application
+        android:name=".SmartGuardApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartGuard"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="31">
+
+        <!-- ===== АКТИВНОСТИ ===== -->
+
+        <!-- Онбординг (точка входа) -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- AI Warning Activity (показывает предупреждения поверх звонка) -->
+        <activity
+            android:name=".call.AiWarningActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SmartGuard.Translucent"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true" />
+
+        <!-- HistoryActivity -->
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:exported="false"
+            android:label="Журнал событий"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 🔥 Детали модуля обучения (ModuleDetailActivity) -->
+        <activity
+            android:name=".ui.academy.ModuleDetailActivity"
+            android:exported="false"
+            android:label="Модуль обучения"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 🔥 Урок (LessonActivity) -->
+        <activity
+            android:name=".ui.academy.LessonActivity"
+            android:exported="false"
+            android:label="Урок"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 🔥 Тест (TestActivity) -->
+        <activity
+            android:name=".ui.academy.TestActivity"
+            android:exported="false"
+            android:label="Тест"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".ui.academy.EncyclopediaActivity" />
+        <activity android:name=".ui.academy.SchemeDetailActivity" />
+
+        <!-- ===== СЕРВИСЫ ===== -->
+
+        <!-- Real-Time AI Call Analysis Service -->
+        <service
+            android:name=".call.RealTimeCallService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- 🔥 CallScreeningService для автоматической блокировки звонков -->
+        <service
+            android:name=".call.BlockedCallScreeningService"
+            android:exported="true"
+            android:permission="android.permission.BIND_SCREENING_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
+
+        <!-- ===== RECEIVERS ===== -->
+
+        <!-- SmsReceiver -->
+        <receiver
+            android:name=".receiver.SmsReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Главная" />
+        <item
+            android:id="@+id/nav_blacklist"
+            android:icon="@drawable/ic_block"
+            android:title="Чёрный список" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_stats"
+            android:title="Статистика" />
+        <item
+            android:id="@+id/nav_audit"
+            android:icon="@drawable/ic_log"
+            android:title="Журнал аудита" />
+        <item
+            android:id="@+id/nav_link_checker"
+            android:icon="@drawable/ic_link"
+            android:title="Проверка ссылок" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Настройки" />
+        <item
+            android:id="@+id/nav_training"
+            android:icon="@drawable/ic_learning"
+            android:title="Обучение" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="О приложении" />
+    </group>
+</menu>

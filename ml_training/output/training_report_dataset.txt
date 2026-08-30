@@ -1,0 +1,7 @@
+=== SMARTGUARD DATASET REPORT (v7.0) ===
+Дата: 2026-05-12 19:28:34
+Всего: 6701 (фишинг: 1378, безопасно: 5323)
+Баланс KZ+RU: 25.9% KZ | 74.1% RU
+Английский: 5312 (79.3%) — независимая база
+Kaggle: ✓ Обработано
+ФАЙЛЫ: expanded_phishing_final.txt, expanded_safe_final.txt

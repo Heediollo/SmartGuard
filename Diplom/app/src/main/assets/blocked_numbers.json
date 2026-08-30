@@ -1,0 +1,290 @@
+[
+  {
+    "phoneNumber": "+77001234567",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77007654321",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77073075290",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77009500452",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77081080381",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77003870035",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77053308965",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77010263003",
+    "category": "spam"
+  },
+  {
+    "phoneNumber": "+77087539417",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77085041223",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77071237406",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000027926",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000030681",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000032710",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000072018",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000072495",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000081830",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000082013",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000082307",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000085278",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000087346",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000122916",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000135357",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000148915",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000178502",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000189030",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000198951",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000208994",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77000209013",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77002147437",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77002170064",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77002174336",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77002448697",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77007102498",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77007104109",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77009121917",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77009121792",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77009122085",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77009500219",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77009500279",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77010384156",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77010389648",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77059244643",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77059277467",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77059277448",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77059279135",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77059279170",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77070057408",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77070089315",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77071263502",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77086194749",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77087798143",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77087826974",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77087945433",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77088403967",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77089108651",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77273461310",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77475214527",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77719201019",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+7719377056",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77719377419",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77719380432",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77719511386",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+770020753175",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77013817648",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77082012834",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77008885588",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+774770479689",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77476715457",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+77052295822",
+    "category": "fraud"
+  },
+  {
+    "phoneNumber": "+777059279187",
+    "category": "collector"
+  },
+  {
+    "phoneNumber": "+77471234567",
+    "category": "collector"
+  }
+]

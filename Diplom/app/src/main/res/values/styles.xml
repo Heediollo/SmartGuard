@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Здесь только стили для кнопок, текстов и т.д., НЕ темы -->
+    <!-- Например: -->
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#6200EE</item>
+    </style>
+</resources>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные строки -->
+    <string name="app_name">SmartGuard</string>
+    <string name="title">SmartGuard</string>
+    <string name="subtitle">Ваш защитник от телефонного и SMS-мошенничества</string>
+
+    <!-- Статусы защиты -->
+    <string name="status_on">Защита включена</string>
+    <string name="status_off">Защита выключена</string>
+    <string name="protection_on">Защита включена</string>
+    <string name="protection_off">Защита выключена</string>
+
+    <!-- Кнопки -->
+    <string name="btn_enable">Включить защиту</string>
+    <string name="btn_disable">Выключить защиту</string>
+    <string name="btn_enable_protection">Включить защиту</string>
+    <string name="btn_disable_protection">Выключить защиту</string>
+    <string name="btn_check">🔍 Проверить номер</string>
+    <string name="btn_check_number">Проверить номер</string>
+    <string name="btn_settings">⚙️ Настройки</string>
+
+    <!-- Иконки -->
+    <string name="icon_shield">🛡️</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_shield_icon">Иконка защиты</string>
+    <string name="accessibility_enable_protection">Включить или выключить защиту</string>
+    <string name="accessibility_check_number">Проверить номер телефона в базе спама</string>
+    <string name="accessibility_settings">Открыть настройки приложения</string>
+
+    <!-- Меню навигации -->
+    <string name="nav_home">🏠 Главная</string>
+    <string name="nav_blacklist">🚫 Чёрный список</string>
+    <string name="nav_statistics">📊 Статистика</string>
+    <string name="nav_audit">📋 Журнал аудита</string>
+    <string name="nav_settings">⚙️ Настройки</string>
+    <string name="nav_training">📚 Обучение</string>
+    <string name="nav_about">ℹ️ О приложении</string>
+
+    <!-- Drawer -->
+    <string name="drawer_open">Открыть меню</string>
+    <string name="drawer_close">Закрыть меню</string>
+    <!-- Онбординг -->
+    <string name="onboarding_icon">🛡️</string>
+    <string name="onboarding_title_placeholder">Заголовок</string>
+    <string name="onboarding_description_placeholder">Описание</string>
+    <string name="btn_next">Далее</string>
+    <string name="btn_start">Начать защиту</string>
+
+    <string name="module_pause_icon">Иконка модуля Мастер паузы</string>
+    <string name="module_keys_icon">Иконка модуля Цифровые ключи</string>
+    <string name="module_encyclopedia_icon">Иконка модуля Энциклопедия мошенника</string>
+    <string name="default_option_text">Вариант ответа</string>
+    <string name="default_explanation_text">Пояснение</string>
+
+        <!-- Главный экран -->
+        <string name="greeting">Добрый день!</string>
+        <string name="greeting_subtitle">SmartGuard на страже вашей безопасности</string>
+
+        <!-- Навигационное меню (хедер) -->
+        <string name="app_logo">Логотип приложения</string>
+        <string name="nav_header_subtitle">Ваш защитник от мошенников</string>
+
+        <!-- Кнопки и действия -->
+        <string name="manage_protection">Управление защитой</string>
+        <string name="enable_all_features">Включить все функции защиты</string>
+        <string name="check_number">Проверить номер телефона</string>
+        <string name="open_menu">Открыть меню</string>
+    <string name="scheme_image">Иллюстрация схемы мошенничества</string>
+        <string name="delete">Удалить</string>
+        <string name="add_number">Добавить номер</string>
+        <string name="phone_number_hint">Номер телефона</string>
+        <string name="category_hint">Категория</string>
+        <string name="shield_animation">Анимация статуса защиты</string>
+        <string name="icon_power">Иконка питания</string>
+        <string name="icon_search">Иконка поиска</string>
+        <string name="icon_arrow">Стрелка вправо</string>
+        <string name="icon_menu">Иконка меню</string>
+</resources>

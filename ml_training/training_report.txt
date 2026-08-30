@@ -1,0 +1,31 @@
+
+=== SMARTGUARD KAZAKHSTAN - CNN IMPROVED REPORT (v10.4) ===
+
+Дата: 2026-05-12 23:39:05
+
+ДАТАСЕТ:
+- Всего: 7381 (фишинг: 1908, безопасно: 5473)
+- Готовый: 1378 + 5323
+- Ручной: 530 + 150
+
+МОДЕЛЬ:
+- Embedding: 10000 × 128
+- Conv1D (64 фильтра, kernel=3) + MaxPooling
+- Conv1D (128 фильтров, kernel=4) + GlobalMaxPooling
+- Dense: 128 → 64 → 2
+- Dropout: 0.5, 0.3
+- Class weight: {0: 1.0, 1: 2.0}
+
+ОБУЧЕНИЕ:
+- Эпохи: 9
+- Batch: 32
+- Early Stopping (patience=7) + ReduceLROnPlateau
+
+РЕЗУЛЬТАТЫ:
+- Accuracy: 94.18%
+- Loss: 0.1501
+- Размер модели: 5327.82 KB
+
+ФАЙЛЫ:
+- phishing_model.tflite
+- tokenizer.pickle
